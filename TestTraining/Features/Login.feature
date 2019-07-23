@@ -11,3 +11,12 @@ Scenario:Login successfull
 	And I enter my password
 	And i click on login button
 	Then I should be on the Giftrete site
+
+@mytag
+Scenario:Login unsuccessfull
+	Given I navigate to the site
+	When I click on Login link
+	And I enter my username
+	And I enter my password
+	And i click on login button
+	Then I should be on the Giftrete site
