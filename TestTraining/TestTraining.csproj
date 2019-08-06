@@ -70,6 +70,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\AddCustomer.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddCustomer.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\Login.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -89,6 +94,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\AddCustomer.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddCustomer.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Login.feature.cs</LastGenOutput>
